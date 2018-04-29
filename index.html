@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta name="description" content="Moodboard">
+  <title>Moodboard</title>
+  <link rel="stylesheet" media="all" href="css/master.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/isotope.js"></script>
+  <script type="text/javascript" src="js/dropzone.min.js"></script>
+</head>
+
+<body class="scroller">
+  <div id="upload"></div>
+
+  <header id="navbar" class="page-header">
+    <span id="logo">
+      <i id="logo-icon" class="fas fa-images" aria-hidden="true"></i>
+    </span>
+    <form action="#" id="search-bar">
+      <input type="text" name="search" id="search" class="quicksearch" autocomplete="off" placeholder="Random Greeting" autocomplete="off"
+        onblur="this.focus()" autofocus="autofocus" tabindex="0">
+    </form>
+    <nav id="menu-bar">
+      <ul>
+        <li>
+          <input type="file" name="fileSelector" class="inputfile" id="fileSelector" multiple accept="image/*" />
+          <label for="fileSelector">
+            <i class="fas fa-plus-circle"></i>
+          </label>
+        </li>
+        <li>
+          <a href="#" onclick="toggleFullScreen()">
+            <i class="fas fa-arrows-alt"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="grid">
+    <div class="grid-sizer"></div>
+  </div>
+
+  <form id="dropzone" method="post" action="/upload" class="dropzone">
+  </form>
+
+  <script type="text/javascript" src="js/utilities.js"></script>
+</body>
+
+</html>
